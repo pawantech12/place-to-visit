@@ -7,7 +7,6 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import Slider from "react-slick";
-import { Helmet } from "react-helmet";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Loader from "./Loader";
