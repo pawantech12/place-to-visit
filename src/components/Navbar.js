@@ -112,7 +112,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
           >
             <Image
-              src="/instagram.webp"
+              src="/Instagram.webp"
               alt="Instagram"
               width={25}
               height={25}
