@@ -726,7 +726,7 @@ const BaseCamp = ({ id }) => {
 
       <section className="mt-8">
         <div
-          className="px-10 py-5 max-md:px-5 hii container mx-auto w-4/5 max-md:w-11/12"
+          className="px-10 py-5 max-md:px-5 hii mx-auto w-4/5 max-md:w-11/12"
           style={{ backgroundColor: "#e9e9e98a" }}
         >
           <div className="grid ">
