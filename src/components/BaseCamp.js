@@ -730,7 +730,7 @@ const BaseCamp = ({ id }) => {
           className="px-10 py-5 max-md:px-5 hii mx-auto w-4/5 max-md:w-11/12"
           style={{ backgroundColor: "#e9e9e98a" }}
         >
-          <div className="grid ">
+          <div>
             <h2
               className="font-bold text-gray-800 text-3xl"
               style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
