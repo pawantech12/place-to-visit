@@ -301,6 +301,7 @@ const Home = () => {
                             width={500}
                             height={500}
                             quality={80} // Reduce size without loss of quality
+                            priority
                             className="w-full h-full object-cover"
                           />
                           <h1 className="legend bg-transparent text-2xl ">
@@ -501,16 +502,16 @@ const Home = () => {
         </div>
       )}
 
-      <section className="py-5">
-        <div className="mx-auto mt-1 px-20 max-md:px-5">
+      <section>
+        <div className="mx-auto mt-1 py-5 px-20 max-md:px-5">
           <div className="flex flex-col">
             <div className="w-full">
-              <div className="flex  items-center justify-center gap-4">
-                <div className=" flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+              <div className="flex max-sm:flex-col items-center justify-center gap-3">
+                <div className=" flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -523,7 +524,7 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full  mb-3 border-4 border-green-500 h-0"></div>
               </div>
 
               <p
@@ -569,15 +570,15 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 max-md:px-5">
-        <div className="container mx-auto py-5">
+      <section className="px-5">
+        <div className="w-4/5 max-md:w-full mx-auto py-5">
           <div className="">
-            <div className="flex items-center justify-center">
-              <div className="flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+            <div className="flex max-sm:flex-col gap-3 items-center justify-center">
+              <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
               <div className="w-full md:w-1/2 flex items-center justify-center">
                 <h2
-                  className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                  className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                   style={{
                     whiteSpace: "nowrap",
                     overflow: "hidden",
@@ -590,10 +591,10 @@ const Home = () => {
                 </h2>
               </div>
 
-              <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+              <div className="flex w-1/4 max-sm:w-full  mb-3 border-4 border-green-500 h-0"></div>
             </div>
 
-            <div className="flex gap-8 items-center mt-8 max-md:flex-col">
+            <div className="flex gap-8 items-center mt-5 max-md:flex-col">
               <div className="lg:w-5/12 md:w-5/12 w-full mt-5">
                 <div
                   to={`/blogs/${blogs[count]?.slug}`}
@@ -601,7 +602,7 @@ const Home = () => {
                   style={divStyle}
                 >
                   <h2
-                    className="pb-4 pt-[70%] rounded-lg text-center text-white cursor-pointer shadow-md"
+                    className="pb-4 pt-[70%] rounded-lg text-center text-white cursor-pointer shadow-md text-2xl"
                     style={{
                       textShadow: "1.1px 0px 0px #c1c1c1",
                       backgroundColor: "rgba(0, 0, 0, 0.4)",
@@ -636,18 +637,18 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 max-md:px-5">
-        <div className="container mx-auto py-5 mb-2">
+      <section className="px-5">
+        <div className="w-4/5 max-md:w-full mx-auto py-5 mb-2">
           <div className="flex flex-col">
             <div className="w-full">
-              <div className="flex items-center justify-center">
+              <div className="flex max-sm:flex-col gap-3 items-center justify-center">
                 {/* Left Orange Border */}
-                <div className="flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 {/* Center Title */}
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -661,7 +662,7 @@ const Home = () => {
                 </div>
 
                 {/* Right Green Border */}
-                <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full mb-3 border-4 border-green-500 h-0"></div>
               </div>
 
               {/* Description Section */}
@@ -674,16 +675,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 py-5 max-md:px-5">
-        <div className="container ">
+      <section className=" py-5 px-5">
+        <div className="w-4/5 max-md:w-full mx-auto ">
           <div className="flex flex-col ">
             <div className="w-full">
-              <div className="flex  items-center justify-center">
-                <div className="flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+              <div className="flex max-sm:flex-col gap-3 items-center justify-center">
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -696,15 +697,15 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full mb-3 border-4 border-green-500 h-0"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-24 pt-5 max-md:px-5">
-        <div className="container mx-auto my-5 overflow-auto">
+      <section className="py-5 px-5">
+        <div className="w-4/5 max-md:w-full mx-auto my-5 overflow-auto">
           <div className="flex overflow-x-auto max-md:w-[800px] space-x-4">
             {smallMirrors?.map((res, index) => (
               <div
@@ -752,16 +753,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 py-5 max-md:px-5">
-        <div className="container ">
+      <section className="py-5 px-5">
+        <div className="w-4/5 max-md:w-full mx-auto ">
           <div className="flex flex-col ">
             <div className="w-full">
-              <div className="flex  items-center justify-center">
-                <div className="flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+              <div className="flex max-sm:flex-col gap-3 items-center justify-center">
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -774,15 +775,15 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-green-500 h-0"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-24 max-md:px-5">
-        <div className="container mx-auto py-12 ">
+      <section className="px-5">
+        <div className="w-4/5 max-md:w-full mx-auto py-5 ">
           <div className="flex flex-col md:flex-row gap-6">
             {/* Left Side - Large Post */}
             <div className="w-full md:w-1/2">
@@ -843,16 +844,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 py-5 max-md:px-5">
-        <div className="container ">
+      <section className="py-5 px-5">
+        <div className="w-4/5 max-md:w-full mx-auto">
           <div className="flex flex-col ">
             <div className="w-full">
-              <div className="flex items-center justify-center">
-                <div className="flex w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+              <div className="flex max-sm:flex-col gap-3 items-center justify-center">
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -865,15 +866,15 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <div className="flex w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full border-4 border-green-500 h-0"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="px-24 max-md:px-5">
-        <div className="container mx-auto py-12 ">
+      <section className="px-5">
+        <div className="w-4/5 max-md:w-full mx-auto py-5 ">
           <div className="flex flex-col md:flex-row gap-5">
             {/* Left Section - Accordion */}
             <div className="md:w-7/12 w-full">
@@ -937,16 +938,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="px-24 py-5">
-        <div className="container ">
+      <section className=" py-5 px-5">
+        <div className="w-4/5 max-md:w-full mx-auto">
           <div className="flex flex-col ">
             <div className="w-full">
-              <div className="flex flex-col md:flex-row items-center justify-center">
-                <div className="hidden md:flex md:w-1/4 mt-3 border-4 border-[#FFA500] h-0"></div>
+              <div className="flex flex-col gap-3 sm:flex-row items-center justify-center">
+                <div className="flex w-1/4 max-sm:w-full mt-3 border-4 border-[#FFA500] h-0"></div>
 
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -959,7 +960,7 @@ const Home = () => {
                   </h2>
                 </div>
 
-                <div className="hidden md:flex md:w-1/4 mt-3 mb-3 border-4 border-green-500 h-0"></div>
+                <div className="flex w-1/4 max-sm:w-full border-4 border-green-500 h-0"></div>
               </div>
             </div>
           </div>
@@ -967,15 +968,21 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="container mx-auto py-5">
-          <div className="flex flex-col md:flex-row gap-5">
+        <div className="w-4/5 max-md:w-full mx-auto py-5 px-5">
+          <div className="flex max-sm:flex-col gap-5">
             {/* Left Section - Clickable Image */}
             <div className="md:w-5/12 w-full ">
               <div
                 onClick={() => router.push(`/${leftTextSlug}`)}
                 className="relative rounded-lg overflow-hidden cursor-pointer"
-                style={divStyle3}
               >
+                <Image
+                  src={left}
+                  alt="image"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover rounded-lg"
+                />
                 <h2 className="absolute inset-0 flex items-center justify-center text-white text-center text-xl font-semibold rounded-lg bg-black bg-opacity-40 transition-all duration-300 hover:text-yellow-400">
                   <span className="absolute bottom-6 text-2xl">{leftText}</span>
                 </h2>
@@ -988,7 +995,7 @@ const Home = () => {
                 href={`https://www.youtube.com/watch?v=${Video?.id?.videoId}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full h-[300px]"
+                className="block w-full h-full max-sm:h-[300px]"
               >
                 <iframe
                   className="w-full h-full rounded-lg"

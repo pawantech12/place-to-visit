@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/webp" href="./Logo.webp" />
         {/* Preconnect to improve resource loading performance */}
         <link
           rel="preconnect"

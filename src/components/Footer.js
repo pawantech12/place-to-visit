@@ -52,8 +52,11 @@ const Footer = () => {
           </div>
 
           {/* Dynamic Categories from API */}
+          {/* Dynamic Categories from API */}
           {data?.slice(0, 3)?.map((res, index) => (
             <div key={index}>
+              {" "}
+              {/* Prevent CLS */}
               <h5 className="font-bold text-xl">{res?.name}</h5>
               <ul className="mt-2 space-y-1 text-sm">
                 {res?.onlyposts?.map((item, i) => (
@@ -122,6 +125,8 @@ const Footer = () => {
                 alt="Facebook"
                 width={25}
                 height={25}
+                priority // Ensures faster loading
+                className="w-[25px] h-[25px]"
               />
             </Link>
             <Link
@@ -134,6 +139,8 @@ const Footer = () => {
                 alt="Instagram"
                 width={25}
                 height={25}
+                priority // Ensures faster loading
+                className="w-[25px] h-[25px]"
               />
             </Link>
             <Link
@@ -141,7 +148,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/youtube.webp" alt="YouTube" width={25} height={25} />
+              <Image
+                src="/youtube.webp"
+                alt="YouTube"
+                width={25}
+                height={25}
+                priority // Ensures faster loading
+                className="w-[25px] h-[25px]"
+              />
             </Link>
             <Link
               href="https://www.linkedin.com/company/103039021/admin/dashboard/"
@@ -153,6 +167,8 @@ const Footer = () => {
                 alt="LinkedIn"
                 width={25}
                 height={25}
+                priority // Ensures faster loading
+                className="w-[25px] h-[25px]"
               />
             </Link>
             <Link
@@ -160,7 +176,14 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image src="/Twitter.webp" alt="Twitter" width={25} height={25} />
+              <Image
+                src="/Twitter.webp"
+                alt="Twitter"
+                width={25}
+                height={25}
+                priority // Ensures faster loading
+                className="w-[25px] h-[25px]"
+              />
             </Link>
           </div>
         </div>

@@ -458,7 +458,7 @@ const BaseCamp = ({ id }) => {
             {/* Left Section */}
             <div className="lg:w-1/2 w-full flex flex-col gap-3">
               <h3
-                className="font-bold text-lg md:text-3xl"
+                className="font-bold text-2xl md:text-3xl"
                 style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
               >
                 {Data?.post_up_title}
@@ -562,7 +562,7 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section>
-        <div className="container  bg-gray-100 mt-8 px-10 max-md:px-5 py-5 w-4/5 mx-auto max-md:w-11/12">
+        <div className="  bg-gray-100 mt-8 px-10 max-md:px-5 py-5 w-4/5 mx-auto max-md:w-11/12">
           <div className="flex flex-col">
             <h2
               className="p-3 font-bold text-3xl text-neutral-800"
@@ -624,9 +624,9 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section>
-        <div className="container mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EBF1DB] w-4/5 max-md:w-11/12">
+        <div className=" mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EBF1DB] w-4/5 max-md:w-11/12">
           <div className="w-full">
-            <h2 className="my-4 font-bold text-xl md:text-3xl text-gray-900 ">
+            <h2 className="my-4 font-bold text-3xl text-gray-900 ">
               {/* How to reach Panchachuli Base camp with the minimum facility */}
               {Data?.places_visit_title}
             </h2>
@@ -644,7 +644,7 @@ const BaseCamp = ({ id }) => {
         <div className="px-10 max-md:px-5 py-5 bg-[#F6E9E9] w-4/5 mx-auto max-md:w-11/12">
           <div className="w-full">
             <div className="w-full">
-              <h2 className="my-4 font-bold text-[1.25rem] md:text-[1.5rem] lg:text-3xl text-shadow">
+              <h2 className="my-4 font-bold text-3xl text-shadow">
                 {Data?.things_to_do_title}
               </h2>
 
@@ -663,7 +663,7 @@ const BaseCamp = ({ id }) => {
 
       <section className="mt-8">
         <div
-          className="container px-10 max-md:px-5 py-5 hii w-4/5 mx-auto max-md:w-11/12"
+          className=" px-10 max-md:px-5 py-5 hii w-4/5 mx-auto max-md:w-11/12"
           style={{ backgroundColor: "#e9e9e98a" }}
         >
           <h2
@@ -696,6 +696,7 @@ const BaseCamp = ({ id }) => {
                           objectFit: "cover",
                           borderRadius: 30,
                         }}
+                        priority
                         width={1000}
                         height={1000}
                       />
@@ -709,7 +710,7 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section>
-        <div className="container mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
+        <div className=" mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
           <div className="grid grid-cols-1">
             <div
               className="text-[22px] font-normal flex flex-col gap-3"
@@ -839,7 +840,7 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section className="mt-8">
-        <div className="mx-auto px-10 max-md:px-5 py-5 bg-[#DBECF1] rounded-lg  w-full md:w-4/5">
+        <div className="mx-auto px-10 max-md:px-5 py-5 bg-[#DBECF1] rounded-lg  w-11/12 md:w-4/5">
           <div className="w-full">
             <h2 className="font-bold text-3xl text-gray-900 ">
               Frequently Asked Questions
@@ -879,7 +880,7 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section>
-        <div className="container mx-auto px-10 max-md:px-5 py-5 my-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
+        <div className=" mx-auto px-10 max-md:px-5 py-5 my-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
           <div className="flex flex-wrap items-center max-lg:flex-col">
             {/* Left Section */}
             <div className="w-full lg:w-7/12 mt-4">

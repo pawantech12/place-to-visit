@@ -50,12 +50,7 @@ const Explore = () => {
       {/* Background Image Section */}
       <div className="container-fluid mt-16">
         <div className="flex justify-center items-center">
-          <div
-            className="relative w-full"
-            style={{
-              backgroundImage: `url(${Data?.parent_blogs?.images[0]?.img_path})`,
-            }}
-          >
+          <div className="relative w-full">
             <Image
               src={Data?.parent_blogs?.images[0]?.img_path}
               alt="image"
