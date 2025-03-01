@@ -678,7 +678,7 @@ const Home = () => {
               {/* Description Section */}
               <div
                 dangerouslySetInnerHTML={{ __html: Data?.about_ptvi_desc }}
-                className="text-xl leading-8 mt-5"
+                className="text-[21px] text-zinc-700 leading-8 mt-5"
               />
             </div>
           </div>

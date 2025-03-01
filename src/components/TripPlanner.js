@@ -378,7 +378,7 @@ const TripPlanner = ({ id }) => {
                         className="bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer "
                         onClick={() => {
                           if (res.status === 1) {
-                            router.push(`/${res?.post_slug}`);
+                            router.push(`/${Data?.slug}/${res?.post_slug}`);
                           }
                         }}
                       >

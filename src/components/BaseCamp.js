@@ -881,14 +881,14 @@ const BaseCamp = ({ id }) => {
 
       <section>
         <div className=" mx-auto px-10 max-md:px-5 py-5 my-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
-          <div className="flex flex-wrap items-center max-lg:flex-col">
+          <div className="flex flex-wrap  max-lg:flex-col">
             {/* Left Section */}
             <div className="w-full lg:w-7/12 mt-4">
               <div
                 dangerouslySetInnerHTML={{
                   __html: Data?.post_plan_section,
                 }}
-                className="text-xl flex flex-col gap-3"
+                className="text-[21px] text-zinc-700 flex flex-col gap-3"
               />
             </div>
 
@@ -898,7 +898,7 @@ const BaseCamp = ({ id }) => {
                 <div className="space-y-3">
                   <input
                     type="number"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Number Of Travelers"
                     value={numberOfTravelers}
                     onChange={handleNumberOfTravelersChange}
@@ -906,7 +906,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="text"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Time in Hand (Days & Nights)"
                     value={timeInHand}
                     onChange={handleTimeInHandChange}
@@ -914,7 +914,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="text"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Trip Type (Trek/Adventure/etc)"
                     value={tripType}
                     onChange={handleTripTypeChange}
@@ -922,7 +922,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="text"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Trip Location (Ex- Rishikesh)"
                     value={tripLocation}
                     onChange={handleTripLocationChange}
@@ -930,7 +930,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="text"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Overall Budget (INR)"
                     value={overallBudget}
                     onChange={handleOverallBudgetChange}
@@ -938,7 +938,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="text"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Travel Medium (Air/Rail/Road/All)"
                     value={travelMedium}
                     onChange={handleTravelMediumChange}
@@ -946,7 +946,7 @@ const BaseCamp = ({ id }) => {
 
                   <input
                     type="number"
-                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none"
+                    className="w-full p-3 border rounded-lg text-[20px] shadow-sm focus:outline-none font-medium"
                     placeholder="Mobile Numbers"
                     value={mobileNumbers}
                     onChange={handleMobileNumbersChange}
