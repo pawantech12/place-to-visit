@@ -562,7 +562,7 @@ const BaseCamp = ({ id }) => {
       </section>
 
       <section>
-        <div className="  bg-gray-100 mt-8 px-10 max-md:px-5 py-5 w-4/5 mx-auto max-md:w-11/12">
+        <div className="  bg-[#f8f9fa] mt-8 px-10 max-md:px-5 py-5 w-4/5 mx-auto max-md:w-11/12">
           <div className="flex flex-col">
             <h2
               className="p-3 font-bold text-3xl text-neutral-800"
@@ -571,16 +571,16 @@ const BaseCamp = ({ id }) => {
               {Data?.post_short_title}
             </h2>
 
-            <div className="flex flex-col lg:flex-row gap-6 items-center">
+            <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-6 items-center mt-4">
               {/* Left Side - Card */}
-              <div className="w-full lg:w-1/2 mt-3">
+              <div className="w-full h-full mt-3">
                 <div
-                  className="rounded-lg p-4 text-xl bg-gray-200 shadow-none"
+                  className="rounded-lg flex flex-col gap-3 p-4 text-xl bg-[#e9e9e98a] shadow-none"
                   style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
                 >
                   {Data?.short_keys?.map((res, index) => (
                     <div key={index}>
-                      <div className="flex items-center mt-3">
+                      <div className="flex items-center ">
                         <div className="w-6 h-6 flex-shrink-0">
                           {res?.vector_image?.imgpath ? (
                             <Image
@@ -595,9 +595,9 @@ const BaseCamp = ({ id }) => {
                           )}
                         </div>
                         <div className="ml-3">
-                          <strong className="text-xl">
+                          <strong className="text-2xl font-bold">
                             {res?.name}:
-                            <span className="ml-1 text-xl font-normal">
+                            <span className="ml-1 text-2xl font-normal">
                               {res?.value}
                             </span>
                           </strong>
@@ -609,13 +609,13 @@ const BaseCamp = ({ id }) => {
               </div>
 
               {/* Right Side - Image */}
-              <div className="w-full h-full lg:w-1/2 mt-3">
+              <div className="w-full mt-3">
                 <Image
                   src={ShortImage}
                   alt="image"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full rounded-lg"
                   width={1000}
-                  height={1000}
+                  height={600}
                 />
               </div>
             </div>

@@ -298,7 +298,7 @@ const TripPlanner = ({ id }) => {
                     {carausl?.map((res, index) => {
                       return (
                         <div key={index}>
-                          <div>
+                          <div className="relative">
                             <Image
                               src={res.img_path}
                               width={1000}
@@ -306,9 +306,17 @@ const TripPlanner = ({ id }) => {
                               alt="img"
                               className="h-full"
                             />
-                            <h1 className="text-2xl bg-white/50 backdrop-blur-md opacity-100 text-black legend">
+                            <h4
+                              className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/50 text-black text-[28px] w-[85%] rounded-md  px-4 py-2 font-medium !backdrop-blur-sm"
+                              style={{
+                                backdropFilter: "blur(10px)",
+                                WebkitBackdropFilter: "blur(10px)",
+
+                                textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                              }}
+                            >
                               {Data?.name} <br />
-                            </h1>
+                            </h4>
                           </div>
                         </div>
                       );
@@ -340,7 +348,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-xl text-zinc-700"
+                className="w-full text-[21px] "
                 dangerouslySetInnerHTML={{ __html: Data?.upr_sec_desc }}
               />
             </div>
@@ -431,7 +439,7 @@ const TripPlanner = ({ id }) => {
               </div>
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
-            <div className="w-full mt-5 text-xl text-zinc-700">
+            <div className="w-full mt-5 text-[21px] text-zinc-700">
               <div
                 dangerouslySetInnerHTML={{
                   __html: Data?.middle_section_category?.description,
@@ -533,7 +541,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-xl text-zinc-700"
+                className="w-full text-[21px] "
                 dangerouslySetInnerHTML={{
                   __html: Data?.lower_section_category?.description,
                 }}
@@ -616,7 +624,7 @@ const TripPlanner = ({ id }) => {
 
             <div className="w-full mt-5">
               <div
-                className="prose max-w-full text-xl text-zinc-700"
+                className="prose max-w-full text-[21px]"
                 dangerouslySetInnerHTML={{
                   __html: Data?.additional_lower_section_category?.description,
                 }}
@@ -697,7 +705,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div
-              className="w-full mt-5 text-xl text-zinc-700"
+              className="w-full mt-5 text-[21px]"
               dangerouslySetInnerHTML={{ __html: Data?.low_sec_desc }}
             ></div>
           </div>
@@ -758,7 +766,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div className="flex flex-wrap mt-5">
-              <div className="w-full md:w-7/12 text-xl text-zinc-700">
+              <div className="w-full md:w-7/12 text-[21px] ">
                 <div
                   dangerouslySetInnerHTML={{ __html: Data?.cta_description }}
                 />

@@ -304,9 +304,19 @@ const Home = () => {
                             priority
                             className="w-full h-full object-cover"
                           />
-                          <h1 className="legend bg-transparent text-2xl ">
-                            {Data?.post_title} <br />
-                          </h1>
+                          {Data.post_title && (
+                            <h4
+                              className="absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-white/50 text-black text-[28px] w-[85%] rounded-md  px-4 py-2 font-medium !backdrop-blur-sm"
+                              style={{
+                                backdropFilter: "blur(10px)",
+                                WebkitBackdropFilter: "blur(10px)",
+
+                                textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                              }}
+                            >
+                              {Data?.post_title} <br />
+                            </h4>
+                          )}
                         </div>
                       ) : null}
                     </div>
