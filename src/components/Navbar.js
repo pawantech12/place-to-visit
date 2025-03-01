@@ -42,21 +42,18 @@ const Navbar = () => {
     <header className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="container mx-auto flex items-center justify-between py-5 px-4 lg:px-0">
         {/* Logo */}
-        <figure className="w-28 h-12">
-          <Image
-            src="/Logo.webp"
-            alt="Logo"
-            width={0}
-            height={0}
-            sizes="100vw"
-            className="cursor-pointer object-cover w-full h-full"
-            onClick={() => {
-              router.push("/");
-              window.scrollTo(0, 0);
-              window.location.reload();
-            }}
-          />
-        </figure>
+        <Link href={`/`}>
+          <figure className="w-28 h-12">
+            <Image
+              src="/Logo.webp"
+              alt="Logo"
+              width={0}
+              height={0}
+              sizes="100vw"
+              className="cursor-pointer object-cover w-full h-full"
+            />
+          </figure>
+        </Link>
 
         {/* Desktop Navigation Menu */}
         <nav className="hidden lg:flex items-center space-x-6">

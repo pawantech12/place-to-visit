@@ -367,30 +367,38 @@ const TripPlanner = ({ id }) => {
                   return (
                     <div key={index} className="w-full sm:w-6/12 lg:w-4/12 p-2">
                       <div
-                        className="bg-white shadow-md rounded-lg overflow-hidden cursor-pointer transition-transform duration-200 hover:scale-105"
+                        className="bg-white border border-gray-200 rounded-lg overflow-hidden cursor-pointer "
                         onClick={() => {
                           if (res.status === 1) {
-                            router.push(`/${Data?.slug}/${res?.post_slug}`);
+                            router.push(`/${res?.post_slug}`);
                           }
                         }}
                       >
-                        <div className="relative">
+                        <div className="relative h-[250px] overflow-hidden">
                           <Image
                             src={res?.images[0]?.img_path}
                             alt="img"
-                            className="w-full h-[300px] object-cover transition-transform duration-200 hover:scale-105"
+                            className="w-full h-full object-cover transition-transform duration-200 hover:scale-105"
                             width={300}
                             height={300}
                           />
                         </div>
-                        <h4 className="text-center py-2 text-lg font-medium shadow-sm shadow-gray-400">
+                        <h4
+                          className="text-center py-2 text-2xl font-semibold shadow-sm shadow-gray-400 bg-[#F7F7F7] "
+                          style={{
+                            textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                          }}
+                        >
                           {res?.post_title}
                         </h4>
                         <div className="p-3">
                           {res?.short_keys?.slice(0, 3).map((item, index) => (
                             <h5
                               key={index}
-                              className="text-sm font-medium text-gray-600"
+                              className=" font-medium text-xl"
+                              style={{
+                                textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                              }}
                             >
                               {item.name}: {item.value}
                             </h5>
@@ -435,7 +443,7 @@ const TripPlanner = ({ id }) => {
 
         <section>
           <div className=" mx-auto px-4 md:w-4/5 w-full">
-            <div className="mb-4 mx-2 flex overflow-x-scroll justify-around">
+            <div className="mb-4 mx-2 flex overflow-x-scroll justify-around scrollbar-none">
               {Data?.middle_section_category?.children?.map((res, index) => (
                 <div key={index} className="mx-1 flex items-center w-[200px]">
                   <button
@@ -456,7 +464,7 @@ const TripPlanner = ({ id }) => {
               <h2 className="font-bold text-xl md:text-2xl text-shadow">
                 {Data?.photo_galary_title}
               </h2>
-              <div className="slider-container pb-3">
+              <div className=" pb-3">
                 <Slider key={slected} ref={selectedRef} {...settings}>
                   {[Data?.middle_section_category?.children[slected]]?.map(
                     (res) =>
@@ -487,7 +495,12 @@ const TripPlanner = ({ id }) => {
                                   )
                               )}
                             </div>
-                            <h5 className="my-2 text-center text-shadow text-lg font-semibold">
+                            <h5
+                              className="my-2 text-center text-shadow text-xl font-medium"
+                              style={{
+                                textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                              }}
+                            >
                               {post.post_title}
                             </h5>
                           </div>
@@ -563,7 +576,12 @@ const TripPlanner = ({ id }) => {
                               )
                           )}
                         </div>
-                        <h5 className="my-2 text-center text-gray-900 drop-shadow-sm">
+                        <h5
+                          className="my-2 text-center text-gray-900 text-xl font-medium"
+                          style={{
+                            textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                          }}
+                        >
                           {res.post_title}
                         </h5>
                       </div>
@@ -580,8 +598,15 @@ const TripPlanner = ({ id }) => {
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 border-4 border-orange-500 h-0 justify-center items-center"></div>
 
-              <div className="w-full md:w-6/12 flex flex-col justify-center items-center">
-                <h2 className="text-2xl font-semibold text-center truncate shadow-[1.1px_0px_0px_#c1c1c1]">
+              <div className=" w-full md:w-6/12 flex justify-center items-center">
+                <h2
+                  className="text-center text-2xl font-semibold text-gray-900"
+                  style={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    textShadow: "1.1px 0px 0px #c1c1c1",
+                  }}
+                >
                   {Data?.additional_lower_section_category?.title}
                 </h2>
               </div>
@@ -635,7 +660,12 @@ const TripPlanner = ({ id }) => {
                                 )
                             )}
                           </div>
-                          <h5 className="my-2 text-center text-gray-800 ">
+                          <h5
+                            className="my-2 text-center text-gray-800 font-medium text-xl"
+                            style={{
+                              textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                            }}
+                          >
                             {res.post_title}
                           </h5>
                         </div>
