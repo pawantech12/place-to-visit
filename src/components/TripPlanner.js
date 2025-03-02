@@ -334,7 +334,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-2xl font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] font-semibold text-gray-900"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -348,7 +348,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-[21px] "
+                className="w-full text-[21px] text-zinc-700"
                 dangerouslySetInnerHTML={{ __html: Data?.upr_sec_desc }}
               />
             </div>
@@ -361,7 +361,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
 
               <div className="w-full md:w-6/12 flex justify-center items-center">
-                <h2 className="text-center text-2xl font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap ">
+                <h2 className="text-center text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap ">
                   {Data?.most_popular_category?.name}
                 </h2>
               </div>
@@ -427,7 +427,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-2xl font-semibold text-gray-800"
+                  className="text-center text-[1.9rem] font-semibold text-gray-800"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -450,7 +450,7 @@ const TripPlanner = ({ id }) => {
         </section>
 
         <section>
-          <div className=" mx-auto px-4 md:w-4/5 w-full">
+          <div className=" mx-auto px-4 md:w-4/5 w-full mt-8">
             <div className="mb-4 mx-2 flex overflow-x-scroll justify-around scrollbar-none">
               {Data?.middle_section_category?.children?.map((res, index) => (
                 <div key={index} className="mx-1 flex items-center w-[200px]">
@@ -468,11 +468,11 @@ const TripPlanner = ({ id }) => {
                 </div>
               ))}
             </div>
-            <div className="row mt-3">
+            <div className="row ">
               <h2 className="font-bold text-xl md:text-2xl text-shadow">
                 {Data?.photo_galary_title}
               </h2>
-              <div className=" pb-3">
+              <div className="mt-8 pb-3">
                 <Slider key={slected} ref={selectedRef} {...settings}>
                   {[Data?.middle_section_category?.children[slected]]?.map(
                     (res) =>
@@ -522,12 +522,12 @@ const TripPlanner = ({ id }) => {
         </section>
 
         <section>
-          <div className="mx-auto my-4 px-5 md:w-4/5 w-full">
+          <div className="mx-auto my-5 px-5 md:w-4/5 w-full">
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-2xl font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] font-semibold text-gray-900"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -541,7 +541,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-[21px] "
+                className="w-full text-[21px] text-zinc-700"
                 dangerouslySetInnerHTML={{
                   __html: Data?.lower_section_category?.description,
                 }}
@@ -550,7 +550,7 @@ const TripPlanner = ({ id }) => {
           </div>
         </section>
 
-        <section className="mt-4">
+        <section className="mt-5">
           <div className="max-md:w-full w-4/5 mx-auto px-4">
             <div className="flex flex-col">
               <h2 className="font-bold text-2xl text-gray-900 drop-shadow-sm">
@@ -602,13 +602,13 @@ const TripPlanner = ({ id }) => {
         </section>
 
         <section>
-          <div className="mx-auto my-4 px-5 md:w-4/5 w-full">
+          <div className="mx-auto my-5 px-5 md:w-4/5 w-full">
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 border-4 border-orange-500 h-0 justify-center items-center"></div>
 
               <div className=" w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-2xl font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] font-semibold text-gray-900"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -624,7 +624,7 @@ const TripPlanner = ({ id }) => {
 
             <div className="w-full mt-5">
               <div
-                className="prose max-w-full text-[21px]"
+                className="prose max-w-full text-[21px] text-zinc-700"
                 dangerouslySetInnerHTML={{
                   __html: Data?.additional_lower_section_category?.description,
                 }}
@@ -686,13 +686,13 @@ const TripPlanner = ({ id }) => {
           </div>
         </section>
 
-        <section className="my-4">
+        <section className="my-5">
           <div className=" mx-auto md:w-4/5 w-full max-md:px-5">
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-2xl font-semibold text-gray-800"
+                  className="text-center text-[1.9rem] font-semibold text-gray-800"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -705,7 +705,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div
-              className="w-full mt-5 text-[21px]"
+              className="w-full mt-5 text-[21px] text-zinc-700"
               dangerouslySetInnerHTML={{ __html: Data?.low_sec_desc }}
             ></div>
           </div>
@@ -716,7 +716,14 @@ const TripPlanner = ({ id }) => {
             <div className="flex max-sm:flex-col gap-3 items-center justify-center">
               <div className="block w-1/4 max-sm:w-full mt-3 border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-1/2 text-center">
-                <h2 className="text-2xl font-semibold text-gray-800 ">
+                <h2
+                  className="text-[1.9rem] font-semibold text-gray-800 "
+                  style={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    textShadow: "1.1px 0px 0px #c1c1c1",
+                  }}
+                >
                   Frequently Asked Questions
                 </h2>
               </div>
@@ -759,14 +766,21 @@ const TripPlanner = ({ id }) => {
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex flex-col items-center">
-                <h2 className="text-2xl font-bold text-gray-800 text-center text-shadow-md capitalize mt-[-1px]">
+                <h2
+                  className="text-[1.9rem] font-bold text-gray-800 text-center text-shadow-md capitalize mt-[-1px]"
+                  style={{
+                    overflow: "hidden",
+                    textOverflow: "ellipsis",
+                    textShadow: "1.1px 0px 0px #c1c1c1",
+                  }}
+                >
                   {Data?.cta_title}
                 </h2>
               </div>
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div className="flex flex-wrap mt-5">
-              <div className="w-full md:w-7/12 text-[21px] ">
+              <div className="w-full md:w-7/12 text-[21px] text-zinc-700">
                 <div
                   dangerouslySetInnerHTML={{ __html: Data?.cta_description }}
                 />

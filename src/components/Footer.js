@@ -62,7 +62,7 @@ const Footer = () => {
                 {res?.onlyposts?.map((item, i) => (
                   <li
                     key={i}
-                    className="cursor-pointer hover:underline text-base"
+                    className="cursor-pointer font-medium hover:underline text-base"
                     onClick={() => {
                       router.push(`/${item?.post_slug || item?.slug}`);
                     }}
@@ -77,7 +77,7 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h5 className="font-bold text-xl">Quick Links</h5>
-            <ul className="mt-2 space-y-1 text-base">
+            <ul className="mt-2 space-y-1 text-base font-medium">
               <li
                 className="cursor-pointer hover:underline"
                 onClick={() => router.push("/aboutus")}

@@ -521,7 +521,7 @@ const Home = () => {
 
                 <div className="w-full md:w-1/2 flex items-center justify-center">
                   <h2
-                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-[1.9rem] font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -538,7 +538,7 @@ const Home = () => {
               </div>
 
               <p
-                className="text-xl text-gray-500 leading-[38px] tracking-wide mt-4"
+                className="text-[21px] text-zinc-700 leading-[38px] tracking-wide mt-4 text-justify"
                 style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
               >
                 {Data?.upper_desc}
@@ -588,7 +588,7 @@ const Home = () => {
 
               <div className="w-full md:w-1/2 flex items-center justify-center">
                 <h2
-                  className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
+                  className="text-2xl md:text-[1.9rem] font-medium text-gray-800 pooja"
                   style={{
                     whiteSpace: "nowrap",
                     overflow: "hidden",
@@ -658,7 +658,7 @@ const Home = () => {
                 {/* Center Title */}
                 <div className="w-full md:w-6/12 flex justify-center items-center">
                   <h2
-                    className="text-2xl md:text-3xl font-medium text-gray-800 pooja"
+                    className="text-2xl md:text-[1.9rem] font-medium text-gray-800 pooja"
                     style={{
                       whiteSpace: "nowrap",
                       overflow: "hidden",
@@ -678,7 +678,7 @@ const Home = () => {
               {/* Description Section */}
               <div
                 dangerouslySetInnerHTML={{ __html: Data?.about_ptvi_desc }}
-                className="text-[21px] text-zinc-700 leading-8 mt-5"
+                className="text-[21px] text-zinc-700 text-justify leading-8 mt-5"
               />
             </div>
           </div>

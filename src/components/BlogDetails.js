@@ -73,18 +73,18 @@ const BlogDetails = ({ id }) => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-4/5 mx-auto max-md:w-11/12">
             {/* Left Section */}
             <div className="md:col-span-2 flex flex-col gap-3">
-              <h3 className="text-3xl font-semibold max-md:text-2xl">
+              <h3 className="text-[1.75rem] font-semibold max-md:text-2xl">
                 {Data?.title}
               </h3>
               <span
-                className="text-gray-600 text-xl font-normal "
+                className="text-[#808080] flex flex-col gap-3 text-justify text-[21px] font-normal "
                 dangerouslySetInnerHTML={{ __html: Data?.description }}
               />
 
               {Data?.posts?.map((res, index) => (
                 <div key={index} className="mt-5 flex flex-col gap-3">
                   <h3 className="text-2xl font-semibold">{res.post_title}</h3>
-                  <p className="text-gray-500 text-xl font-medium">
+                  <p className="text-[#808080] text-justify text-xl font-medium">
                     {getFirstParagraph(res.post_up_fst_desc)}
                   </p>
 
@@ -116,11 +116,11 @@ const BlogDetails = ({ id }) => {
             {/* Right Section */}
             <div className="md:col-span-1">
               {/* Recent Posts */}
-              <div className="bg-gray-300 rounded-lg shadow-md border">
-                <h5 className="text-center font-semibold text-neutral-800 text-xl py-4">
+              <div className="bg-[#bdbdbd] rounded-lg shadow-md border">
+                <h5 className="text-center font-medium text-neutral-800 text-[1.25rem] py-4">
                   Recent Posts
                 </h5>
-                <div className="bg-gray-200 p-5">
+                <div className="bg-[#e5e5e5] p-5">
                   {recentPost?.map((res, index) => (
                     <div
                       key={index}
@@ -132,9 +132,9 @@ const BlogDetails = ({ id }) => {
                         alt="image"
                         width={60}
                         height={60}
-                        className="rounded-md"
+                        className="rounded-md w-[30%] h-[60px]"
                       />
-                      <span className="ml-3 text-gray-500 text-base font-medium">
+                      <span className="ml-3 text-[#808080] text-base font-medium w-[70%]">
                         {res?.post_title}
                       </span>
                     </div>
@@ -143,9 +143,11 @@ const BlogDetails = ({ id }) => {
               </div>
 
               {/* Trending Stories */}
-              <div className="bg-gray-300 rounded-lg shadow-md border mt-4">
-                <h5 className="text-center font-bold p-4">Trending Stories</h5>
-                <div className="bg-gray-200 p-5">
+              <div className="bg-[#bdbdbd] rounded-lg shadow-md border mt-4">
+                <h5 className="text-center text-[1.25rem] text-neutral-800 font-medium p-4">
+                  Trending Stories
+                </h5>
+                <div className="bg-[#e5e5e5] p-5">
                   {recentTranding?.map((res, index) => (
                     <div
                       key={index}

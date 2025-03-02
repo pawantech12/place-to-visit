@@ -71,7 +71,7 @@ const Explore = () => {
           {Data?.blogs?.map((res, index) => (
             <div key={index} className="mt-4">
               <div
-                className="bg-white border shadow-md rounded-lg cursor-pointer transition hover:shadow-xl"
+                className="bg-white border border-gray-200 rounded-lg cursor-pointer "
                 onClick={() => router.push(`/blogs/${res.slug}`)}
               >
                 {/* Blog Image */}
@@ -90,13 +90,13 @@ const Explore = () => {
                   <h5 className="text-lg font-semibold mb-2">{res?.title}</h5>
                   <p className="text-gray-600">
                     {removeHtmlTags(truncateText(res.description, 120))}
+                    <span
+                      className="text-[#0DCAF0] font-semibold cursor-pointer inline-block  italic"
+                      onClick={() => router.push(`/blogs/${res.slug}`)}
+                    >
+                      Read More
+                    </span>
                   </p>
-                  <span
-                    className="text-blue-600 font-semibold cursor-pointer inline-block mt-3"
-                    onClick={() => router.push(`/blogs/${res.slug}`)}
-                  >
-                    Read More
-                  </span>
                 </div>
               </div>
             </div>

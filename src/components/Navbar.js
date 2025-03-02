@@ -64,7 +64,7 @@ const Navbar = () => {
               onMouseEnter={() => toggleDropdown(index)}
               onMouseLeave={handleMouseLeave}
             >
-              <span className="cursor-pointer text-gray-500 capitalize flex items-center gap-1 text-lg font-medium">
+              <span className="cursor-pointer text-gray-500 capitalize flex items-center gap-1 text-xl font-medium">
                 {item?.name}
                 {isOpen === index ? <FaChevronUp /> : <FaChevronDown />}
               </span>
@@ -75,7 +75,7 @@ const Navbar = () => {
                     <li key={i} className="px-4 py-2 hover:bg-gray-100">
                       <Link
                         href={`/${post.post_slug}`}
-                        className="text-gray-700 block"
+                        className="text-gray-700 block font-medium text-[1.2rem]"
                       >
                         {post?.post_name}
                       </Link>

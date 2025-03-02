@@ -25,11 +25,11 @@ const Copyrightpolicy = () => {
       <div className="my-12">
         <section className="mt-4">
           <div className="container p-8 bg-[#DBECF1] w-4/5 mx-auto max-md:w-11/12">
-            <div className="w-full text-xl">
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+            <div className="w-full flex flex-col gap-3 text-[21px]">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Copyright Policy
               </h4>
-              <p className="text-zinc-700">
+              <p className="text-zinc-700 text-justify">
                 The content, including text, images, graphics, and multimedia
                 elements, displayed on the{" "}
                 <span className="font-semibold text-blue-600">
@@ -40,10 +40,10 @@ const Copyrightpolicy = () => {
                 or its content providers.
               </p>
 
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Use of Content
               </h4>
-              <p className="text-zinc-700">
+              <p className="text-zinc-700 text-justify">
                 Visitors to the Website are granted a limited, non-exclusive,
                 and revocable license to access and use the content for
                 personal, non-commercial purposes only. This license does not
@@ -52,10 +52,10 @@ const Copyrightpolicy = () => {
                 to Visit India.
               </p>
 
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Copyright Infringement
               </h4>
-              <p className="text-zinc-700">
+              <p className="text-zinc-700 text-justify">
                 Places to Visit India respects the intellectual property rights
                 of others and expects its users to do the same. If you believe
                 that your copyrighted work has been copied in a way that
@@ -97,10 +97,10 @@ const Copyrightpolicy = () => {
                 <li>Your physical or electronic signature.</li>
               </ul>
 
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Claiming Copyright
               </h4>
-              <p className="text-zinc-700">
+              <p className="text-zinc-700 text-justify">
                 If you wish to claim copyright on any media or content found on
                 the Website, please contact us at{" "}
                 <a
@@ -112,7 +112,7 @@ const Copyrightpolicy = () => {
                 .
               </p>
 
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Counter-Notification
               </h4>
               <ul className="list-disc ml-5 mt-2 text-gray-700">
@@ -139,10 +139,10 @@ const Copyrightpolicy = () => {
                 </li>
               </ul>
 
-              <h4 className="mt-3 font-bold text-xl text-gray-700">
+              <h4 className="mt-3 font-bold text-[21px] text-gray-700">
                 Changes to Copyright Policy
               </h4>
-              <p className="text-zinc-700">
+              <p className="text-zinc-700 text-justify">
                 Places to Visit India reserves the right to modify or update
                 this Copyright Policy at any time without prior notice. Such
                 changes will be effective immediately upon posting the updated

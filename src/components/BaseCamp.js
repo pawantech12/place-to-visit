@@ -440,7 +440,7 @@ const BaseCamp = ({ id }) => {
                         height={1000}
                         className="h-full w-full"
                       />
-                      <h1 className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-5/6 text-2xl font-semibold bg-white/50 backdrop-blur-sm text-black opacity-100 p-2 py-3 rounded-lg text-center">
+                      <h1 className="absolute bottom-12 left-1/2 transform -translate-x-1/2 w-5/6 text-[28px] font-semibold bg-white/50 backdrop-blur-sm text-black opacity-100 p-2 py-3 rounded-lg text-center">
                         {Data?.post_title} <br />
                       </h1>
                     </div>
@@ -458,7 +458,7 @@ const BaseCamp = ({ id }) => {
             {/* Left Section */}
             <div className="lg:w-1/2 w-full flex flex-col gap-3">
               <h3
-                className="font-bold text-2xl md:text-3xl"
+                className="font-bold text-2xl md:text-[1.75rem]"
                 style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
               >
                 {Data?.post_up_title}
@@ -470,14 +470,14 @@ const BaseCamp = ({ id }) => {
                       ? Data?.post_up_fst_desc
                       : truncateText(Data?.post_up_fst_desc, 840),
                   }}
-                  className="text-xl text-zinc-600"
+                  className="text-[21px] text-zinc-600 text-justify"
                 />
                 {Data?.post_up_fst_desc &&
                   Data?.post_up_fst_desc?.length > 840 && (
                     <span className="mb-5">
                       <i>
                         <strong
-                          className="text-blue-500 cursor-pointer"
+                          className="text-[#0DCAF0] cursor-pointer "
                           onClick={toggleContent}
                         >
                           {showFullContent ? "Read Less" : "Read More"}
@@ -504,7 +504,7 @@ const BaseCamp = ({ id }) => {
 
       <section>
         <div className="bg-[#e9e9e98a] p-8 px-10 max-md:px-5 w-4/5 mx-auto max-md:w-11/12">
-          <div className="flex  items-center gap-5 max-lg:flex-col ">
+          <div className="flex gap-5 max-lg:flex-col ">
             {/* Left Column (Image) */}
             <div className="w-full lg:w-1/2 p-3">
               <Image
@@ -524,14 +524,14 @@ const BaseCamp = ({ id }) => {
                     ? Data?.post_up_sec_desc
                     : truncateText1(Data?.post_up_sec_desc, 900),
                 }}
-                className="text-xl text-zinc-600 flex flex-col gap-2"
+                className="text-[21px] text-justify text-zinc-600 flex flex-col gap-2"
               />
               {Data?.post_up_sec_desc &&
                 Data?.post_up_sec_desc?.length > 900 && (
                   <span className="mb-5">
                     <i>
                       <strong
-                        className="text-blue-500 cursor-pointer"
+                        className="text-[#0DCAF0] cursor-pointer"
                         onClick={toggleContent1}
                       >
                         {showFullContent1 ? "Read Less" : "Read More"}
@@ -547,7 +547,7 @@ const BaseCamp = ({ id }) => {
       <section>
         <div className="mt-8 px-10 py-5 max-md:px-5 bg-[#DBECF1] rounded-lg w-4/5 mx-auto max-md:w-11/12">
           <div className="w-full">
-            <h2 className="my-4 font-bold text-3xl text-gray-900 shadow-text">
+            <h2 className="my-4 font-bold text-[1.9rem] text-gray-900 shadow-text">
               {Data?.post_mid_title}
             </h2>
 
@@ -555,7 +555,7 @@ const BaseCamp = ({ id }) => {
               dangerouslySetInnerHTML={{
                 __html: Data?.post_mid_description,
               }}
-              className="text-xl flex flex-col gap-3"
+              className="text-[21px] flex flex-col gap-3 text-justify"
             />
           </div>
         </div>
@@ -565,7 +565,7 @@ const BaseCamp = ({ id }) => {
         <div className="  bg-[#f8f9fa] mt-8 px-10 max-md:px-5 py-5 w-4/5 mx-auto max-md:w-11/12">
           <div className="flex flex-col">
             <h2
-              className="p-3 font-bold text-3xl text-neutral-800"
+              className="p-3 font-bold text-[1.9rem] text-neutral-800"
               style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
             >
               {Data?.post_short_title}
@@ -626,7 +626,7 @@ const BaseCamp = ({ id }) => {
       <section>
         <div className=" mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EBF1DB] w-4/5 max-md:w-11/12">
           <div className="w-full">
-            <h2 className="my-4 font-bold text-3xl text-gray-900 ">
+            <h2 className="my-4 font-bold text-[1.9rem] text-gray-900 ">
               {/* How to reach Panchachuli Base camp with the minimum facility */}
               {Data?.places_visit_title}
             </h2>
@@ -634,7 +634,7 @@ const BaseCamp = ({ id }) => {
               dangerouslySetInnerHTML={{
                 __html: Data?.post_expolore_section,
               }}
-              className="text-xl flex flex-col gap-3"
+              className="text-[21px] flex flex-col gap-3 text-justify"
             />
           </div>
         </div>
@@ -644,7 +644,7 @@ const BaseCamp = ({ id }) => {
         <div className="px-10 max-md:px-5 py-5 bg-[#F6E9E9] w-4/5 mx-auto max-md:w-11/12">
           <div className="w-full">
             <div className="w-full">
-              <h2 className="my-4 font-bold text-3xl text-shadow">
+              <h2 className="my-4 font-bold text-[1.9rem] text-shadow">
                 {Data?.things_to_do_title}
               </h2>
 
@@ -652,7 +652,7 @@ const BaseCamp = ({ id }) => {
                 dangerouslySetInnerHTML={{
                   __html: Data?.post_activity_section,
                 }}
-                className="text-xl flex flex-col gap-3"
+                className="text-[21px] text-justify flex flex-col gap-3"
               />
             </div>
           </div>
@@ -671,7 +671,7 @@ const BaseCamp = ({ id }) => {
               fontWeight: "700",
               textShadow: "1.1px 0px 0px #c1c1c1",
             }}
-            className="text-3xl text-neutral-700"
+            className="text-[1.9rem] text-neutral-700"
           >
             {Data?.photo_galary_title}
           </h2>
@@ -713,7 +713,7 @@ const BaseCamp = ({ id }) => {
         <div className=" mx-auto px-10 max-md:px-5 py-5 mt-8 bg-[#EDE9F6] w-4/5 max-md:w-11/12">
           <div className="grid grid-cols-1">
             <div
-              className="text-[22px] font-normal flex flex-col gap-3"
+              className="text-[21px] text-justify font-normal flex flex-col gap-3"
               style={{
                 textShadow: "1.1px 0px 0px #c1c1c1",
               }}
@@ -732,7 +732,7 @@ const BaseCamp = ({ id }) => {
         >
           <div>
             <h2
-              className="font-bold text-gray-800 text-3xl"
+              className="font-bold text-gray-800 text-[1.9rem]"
               style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
             >
               {Data?.post_explore_more_title}
@@ -768,10 +768,11 @@ const BaseCamp = ({ id }) => {
                             />
                             <div className="flex justify-center items-center">
                               <h1
-                                className="text-lg text-gray-800 legend"
+                                className="text-xl text-gray-800 legend font-medium"
                                 style={{
                                   backgroundColor: "transparent",
-                                  textShadow: "1.1px 0px 0px #c1c1c1",
+                                  textShadow:
+                                    "rgb(193, 193, 193) 1.1px 0px 0px",
                                 }}
                               >
                                 {res.post_title}
@@ -791,7 +792,7 @@ const BaseCamp = ({ id }) => {
       <section className="mt-8">
         <div className="px-10 max-md:px-5 py-5 hii bg-[#e9e9e98a] w-4/5 mx-auto max-md:w-11/12">
           <div className="flex flex-col">
-            <h2 className="font-bold text-3xl">
+            <h2 className="font-bold text-[1.9rem]">
               {Data?.trending_destination_title}
             </h2>
 
@@ -824,7 +825,13 @@ const BaseCamp = ({ id }) => {
                               height={1000}
                             />
                             <div className="flex justify-center items-center">
-                              <h1 className="text-lg font-semibold text-shadow-sm bg-transparent">
+                              <h1
+                                className="text-xl  text-shadow-sm bg-transparent font-medium"
+                                style={{
+                                  textShadow:
+                                    "rgb(193, 193, 193) 1.1px 0px 0px",
+                                }}
+                              >
                                 {res.post_title}
                               </h1>
                             </div>
@@ -842,7 +849,7 @@ const BaseCamp = ({ id }) => {
       <section className="mt-8">
         <div className="mx-auto px-10 max-md:px-5 py-5 bg-[#DBECF1] rounded-lg  w-11/12 md:w-4/5">
           <div className="w-full">
-            <h2 className="font-bold text-3xl text-gray-900 ">
+            <h2 className="font-bold text-[1.9rem] text-gray-900 ">
               Frequently Asked Questions
             </h2>
 
@@ -888,7 +895,7 @@ const BaseCamp = ({ id }) => {
                 dangerouslySetInnerHTML={{
                   __html: Data?.post_plan_section,
                 }}
-                className="text-[21px] text-zinc-700 flex flex-col gap-3"
+                className="text-[21px] text-justify text-zinc-700 flex flex-col gap-3"
               />
             </div>
 

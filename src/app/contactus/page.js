@@ -27,7 +27,13 @@ const Contactus = () => {
         <section>
           <div className="container px-5 bg-[#DBECF1] rounded-lg overflow-hidden w-3/4 mx-auto max-md:w-11/12">
             <div className="flex justify-center items-center">
-              <h4 className="my-4 font-bold text-gray-700 text-center text-2xl max-md:text-xl">
+              <h4
+                className="my-4 font-bold text-center text-[1.5rem] max-md:text-xl"
+                style={{
+                  textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                  textTransform: "capitalize",
+                }}
+              >
                 We promise to revert you within 6 hours!
               </h4>
             </div>
@@ -38,10 +44,16 @@ const Contactus = () => {
         <section className="mt-4">
           <div className="container p-8 bg-[#F6E9E9] w-3/4 mx-auto max-md:w-11/12">
             <div className="w-full">
-              <h4 className="my-4 font-bold text-2xl text-gray-700">
+              <h4
+                className="my-4 font-bold text-[1.5rem] "
+                style={{
+                  textShadow: "rgb(193, 193, 193) 1.1px 0px 0px",
+                  textTransform: "capitalize",
+                }}
+              >
                 Explore India with Confidence
               </h4>
-              <p className="text-xl text-zinc-800">
+              <p className="text-[21px] text-justify ">
                 Embark on your Indian adventure with the assurance of accurate
                 and up-to-date information, courtesy of our dedicated team of
                 experts at{" "}
@@ -52,7 +64,7 @@ const Contactus = () => {
                 comprehensive updates on crucial factors such as climate
                 conditions, tourist influx, cost fluctuations, and more.
               </p>
-              <p className="mt-3 text-xl text-zinc-800">
+              <p className="mt-3 text-[21px] text-justify">
                 Tailored to your preferences and constraints, our services
                 include crafting personalized itineraries tailored to your
                 timeframe and budget. Whether you're uncertain about where to
@@ -61,7 +73,7 @@ const Contactus = () => {
                 day-by-day itinerary to maximizing your time and resources, we
                 strive to ensure a seamless travel experience.
               </p>
-              <p className="mt-3 text-xl text-zinc-800">
+              <p className="mt-3 text-[21px] text-justify">
                 Best of all, our consultation services come at no cost. Feel
                 free to reach out for a brief inquiry about a destination or to
                 start planning your dream trip—our team is here to help you
@@ -73,15 +85,17 @@ const Contactus = () => {
 
         {/* Contact Icons Section */}
         <section className="mt-4">
-          <div className="container px-5 py-3 bg-[#EDE9F6] w-3/4 mx-auto max-md:w-11/12">
+          <div className="container px-8 max-sm:px-5 py-10 bg-[#EDE9F6] w-3/4 mx-auto max-md:w-11/12">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center p-5">
               {/* Email Icon */}
               <div className="flex flex-col items-center">
                 <div className="bg-red-500 p-6 rounded-full">
                   <FaMailBulk className="text-white text-4xl" />
                 </div>
-                <h3 className="mt-2 text-xl font-bold">Email Us</h3>
-                <h3 className="mt-1 text-gray-700 text-xl">
+                <h3 className="mt-2 text-2xl text-gray-700 font-medium">
+                  Email Us
+                </h3>
+                <h3 className="mt-1 text-gray-700 font-medium text-2xl">
                   Info@placetovisitindia.com
                 </h3>
               </div>
@@ -91,8 +105,12 @@ const Contactus = () => {
                 <div className="bg-green-500 p-6 rounded-full">
                   <FaWhatsapp className="text-white text-4xl" />
                 </div>
-                <h3 className="mt-2 text-xl font-bold">WhatsApp Us</h3>
-                <h3 className="mt-1 text-gray-700 text-xl">+91-9929107926</h3>
+                <h3 className="mt-2 text-2xl text-gray-700 font-medium">
+                  WhatsApp Us
+                </h3>
+                <h3 className="mt-1 text-gray-700 font-medium text-2xl">
+                  +91-9929107926
+                </h3>
               </div>
 
               {/* Phone Icon */}
@@ -100,8 +118,12 @@ const Contactus = () => {
                 <div className="bg-blue-500 p-6 rounded-full">
                   <FaPhone className="text-white text-4xl" />
                 </div>
-                <h3 className="mt-2 text-xl font-bold">Contact Us</h3>
-                <h3 className="mt-1 text-gray-700 text-xl">+91-9929107926</h3>
+                <h3 className="mt-2 text-2xl text-gray-700 font-medium">
+                  Contact Us
+                </h3>
+                <h3 className="mt-1 text-gray-700 font-medium text-2xl">
+                  +91-9929107926
+                </h3>
               </div>
             </div>
           </div>
