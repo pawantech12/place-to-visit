@@ -9,14 +9,14 @@ export async function generateMetadata({ params }) {
     const data = await res.json();
 
     return {
-      title: data?.data?.post_title,
+      title: data?.data?.meta_title,
       description:
-        data?.data?.post_mid_description ||
+        data?.data?.meta_description ||
         "Explore amazing blogs about travel and tourism in India.",
       openGraph: {
-        title: data?.data?.post_title,
+        title: data?.data?.meta_title,
         description:
-          data?.data?.post_mid_description ||
+          data?.data?.meta_description ||
           "Explore amazing blogs about travel and tourism in India.",
       },
     };

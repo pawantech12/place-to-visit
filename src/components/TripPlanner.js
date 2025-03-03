@@ -348,7 +348,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-[21px] text-zinc-700"
+                className="w-full text-[21px] text-zinc-700 flex flex-col gap-4"
                 dangerouslySetInnerHTML={{ __html: Data?.upr_sec_desc }}
               />
             </div>
@@ -444,6 +444,7 @@ const TripPlanner = ({ id }) => {
                 dangerouslySetInnerHTML={{
                   __html: Data?.middle_section_category?.description,
                 }}
+                className="flex flex-col gap-4"
               ></div>
             </div>
           </div>
@@ -541,7 +542,7 @@ const TripPlanner = ({ id }) => {
             </div>
             <div className="mt-4">
               <div
-                className="w-full text-[21px] text-zinc-700"
+                className="w-full text-[21px] text-zinc-700 flex flex-col gap-4"
                 dangerouslySetInnerHTML={{
                   __html: Data?.lower_section_category?.description,
                 }}
@@ -624,7 +625,7 @@ const TripPlanner = ({ id }) => {
 
             <div className="w-full mt-5">
               <div
-                className="prose max-w-full text-[21px] text-zinc-700"
+                className="prose max-w-full text-[21px] text-zinc-700 flex flex-col gap-4"
                 dangerouslySetInnerHTML={{
                   __html: Data?.additional_lower_section_category?.description,
                 }}
@@ -705,7 +706,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div
-              className="w-full mt-5 text-[21px] text-zinc-700"
+              className="w-full mt-5 text-[21px] text-zinc-700 flex flex-col gap-4"
               dangerouslySetInnerHTML={{ __html: Data?.low_sec_desc }}
             ></div>
           </div>
@@ -780,9 +781,10 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-green-500 h-0"></div>
             </div>
             <div className="flex flex-wrap mt-5">
-              <div className="w-full md:w-7/12 text-[21px] text-zinc-700">
+              <div className="w-full md:w-7/12 text-[21px] text-zinc-700 ">
                 <div
                   dangerouslySetInnerHTML={{ __html: Data?.cta_description }}
+                  className="flex flex-col gap-4"
                 />
               </div>
               <div className="w-full md:w-5/12 mt-2 p-4">
