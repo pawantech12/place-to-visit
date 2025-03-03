@@ -578,6 +578,7 @@ const TripPlanner = ({ id }) => {
                                   key={imageIndex}
                                   src={image.img_path}
                                   alt="image"
+                                  priority
                                   className="w-full h-[270px] rounded-lg overflow-hidden object-cover"
                                   width={300}
                                   height={200}
@@ -662,6 +663,7 @@ const TripPlanner = ({ id }) => {
                                     key={imageIndex}
                                     src={image.img_path}
                                     alt="image"
+                                    priority
                                     className="w-full h-[270px] rounded-lg overflow-hidden"
                                     width={300}
                                     height={200}
