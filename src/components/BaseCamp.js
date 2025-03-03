@@ -676,7 +676,7 @@ const BaseCamp = ({ id }) => {
             {Data?.photo_galary_title}
           </h2>
           <div className="slider-container py-4">
-            <Slider {...settings}>
+            <Slider key={Gallery.length} {...settings}>
               {Gallery.map((res, index) => {
                 return (
                   <div key={index}>
@@ -739,7 +739,7 @@ const BaseCamp = ({ id }) => {
             </h2>
 
             <div className=" py-4">
-              <Slider {...settings}>
+              <Slider key={moreData?.expolore_more_post?.length} {...settings}>
                 {moreData?.expolore_more_post?.map((res, index) => (
                   <div
                     key={index}
@@ -797,7 +797,7 @@ const BaseCamp = ({ id }) => {
             </h2>
 
             <div className="slider-container py-4">
-              <Slider {...settings}>
+              <Slider key={moreData?.trending_more_post?.length} {...settings}>
                 {moreData?.trending_more_post?.map((res, index) => (
                   <div
                     key={index}

@@ -5,16 +5,20 @@ export async function generateMetadata({ params }) {
       `https://api.placestovisitindia.com/api/blogs/${id}`
     );
     const data = await res.json();
+    // ✅ Remove HTML tags from description
+    const plainTextDescription = data?.data?.description
+      ? stripHtmlTags(data.data.description)
+      : "Explore amazing blogs about travel and tourism in India.";
 
     return {
       title: data?.data?.title,
       description:
-        data?.data?.description ||
+        plainTextDescription ||
         "Explore amazing blogs about travel and tourism in India.",
       openGraph: {
         title: data?.data?.title,
         description:
-          data?.data?.description ||
+          plainTextDescription ||
           "Explore amazing blogs about travel and tourism in India.",
       },
     };
@@ -26,6 +30,9 @@ export async function generateMetadata({ params }) {
     };
   }
 }
+const stripHtmlTags = (html) => {
+  return html.replace(/<\/?[^>]+(>|$)/g, ""); // Removes all HTML tags
+};
 
 import BlogDetails from "@/components/BlogDetails";
 // import { useParams } from "next/navigation";

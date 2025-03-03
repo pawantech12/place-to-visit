@@ -29,7 +29,6 @@ const TripPlanner = ({ id }) => {
   const [loader, setLoader] = useState(false);
   const [slected, setslected] = useState(0);
   const [carausl, setCarausl] = useState([]);
-  const [showFullContent, setShowFullContent] = useState(false);
   const [numberOfTravelers, setNumberOfTravelers] = useState("");
   const [timeInHand, setTimeInHand] = useState("");
   const [tripType, setTripType] = useState("");
@@ -241,6 +240,7 @@ const TripPlanner = ({ id }) => {
     slidesToScroll: 1,
     dotsClass: "slick-dots",
     dots: true,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -256,7 +256,6 @@ const TripPlanner = ({ id }) => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          initialSlide: 2,
         },
       },
       {
@@ -474,13 +473,16 @@ const TripPlanner = ({ id }) => {
                 {Data?.photo_galary_title}
               </h2>
               <div className="mt-8 pb-3">
-                <Slider key={slected} ref={selectedRef} {...settings}>
+                <Slider
+                  key={Data?.middle_section_category?.children[slected]}
+                  {...settings}
+                >
                   {[Data?.middle_section_category?.children[slected]]?.map(
                     (res) =>
                       res?.posts?.map((post, postIndex) => (
                         <div
                           key={postIndex}
-                          className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3"
+                          className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 min-h-[270px]"
                           onClick={() => {
                             if (post?.status === 1) {
                               router.push(`/${Data?.slug}/${post?.post_slug}`);
@@ -496,7 +498,6 @@ const TripPlanner = ({ id }) => {
                                       key={imageIndex}
                                       src={image.img_path}
                                       alt="image"
-                                      priority
                                       className="w-full h-[270px] rounded-lg overflow-hidden"
                                       width={200}
                                       height={200}
@@ -558,7 +559,10 @@ const TripPlanner = ({ id }) => {
                 {Data?.photo_galary_title}
               </h2>
               <div className="slider-container mt-4">
-                <Slider {...settings}>
+                <Slider
+                  key={Data?.lower_section_category?.posts?.length}
+                  {...settings}
+                >
                   {Data?.lower_section_category?.posts?.map((res, index) => (
                     <div
                       key={index}
@@ -578,7 +582,6 @@ const TripPlanner = ({ id }) => {
                                   key={imageIndex}
                                   src={image.img_path}
                                   alt="image"
-                                  priority
                                   className="w-full h-[270px] rounded-lg overflow-hidden object-cover"
                                   width={300}
                                   height={200}
@@ -637,12 +640,15 @@ const TripPlanner = ({ id }) => {
 
         <section className="mt-4">
           <div className=" mx-auto px-5 md:w-4/5 w-full">
-            <div className="grid">
+            <div>
               <h2 className="font-bold text-2xl text-gray-800 shadow-[1.1px_0px_0px_#c1c1c1]">
                 {Data?.photo_galary_title}
               </h2>
               <div className=" mt-4">
-                <Slider {...settings}>
+                <Slider
+                  key={Data?.additional_lower_section_category?.posts?.length}
+                  {...settings}
+                >
                   {Data?.additional_lower_section_category?.posts?.map(
                     (res, index) => (
                       <div
@@ -663,10 +669,9 @@ const TripPlanner = ({ id }) => {
                                     key={imageIndex}
                                     src={image.img_path}
                                     alt="image"
-                                    priority
-                                    className="w-full h-[270px] rounded-lg overflow-hidden"
                                     width={300}
                                     height={200}
+                                    className="w-full h-[270px] rounded-lg overflow-hidden"
                                   />
                                 )
                             )}

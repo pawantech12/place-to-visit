@@ -8,18 +8,20 @@ export async function generateMetadata({ params }) {
     );
     const data = await res.json();
 
-    return {
-      title: data?.data?.meta_title,
-      description:
-        data?.data?.meta_description ||
-        "Explore amazing blogs about travel and tourism in India.",
-      openGraph: {
-        title: data?.data?.meta_title,
+    if (data?.data?.meta_title && data?.data?.meta_description) {
+      return {
+        title: data?.data?.meta_title || "Blogs - places to visit india",
         description:
           data?.data?.meta_description ||
           "Explore amazing blogs about travel and tourism in India.",
-      },
-    };
+        openGraph: {
+          title: data?.data?.meta_title || "Blogs - Places to Visit India",
+          description:
+            data?.data?.meta_description ||
+            "Explore amazing blogs about travel and tourism in India.",
+        },
+      };
+    }
   } catch (error) {
     console.error("Error fetching metadata:", error);
     return {
