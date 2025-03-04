@@ -451,7 +451,7 @@ const TripPlanner = ({ id }) => {
 
         <section>
           <div className=" mx-auto px-4 md:w-4/5 w-full mt-8">
-            <div className="mb-4 mx-2 flex overflow-x-scroll justify-around scrollbar-none">
+            <div className="mb-4 mx-2 flex overflow-x-scroll scrollbar-none">
               {Data?.middle_section_category?.children?.map((res, index) => (
                 <div key={index} className="mx-1 flex items-center w-[200px]">
                   <button
