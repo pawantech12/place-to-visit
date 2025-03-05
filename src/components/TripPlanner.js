@@ -773,7 +773,7 @@ const TripPlanner = ({ id }) => {
           <div className=" mx-auto my-5 px-5 md:w-4/5 w-full">
             <div className="flex max-sm:flex-col gap-3 items-center">
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
-              <div className="w-full md:w-6/12 flex flex-col items-center">
+              <div className="w-full md:w-6/12 text-center ">
                 <h2
                   className="text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-800"
                   style={{
