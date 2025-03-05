@@ -333,7 +333,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-[1.9rem] font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] text-gray-900 font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap "
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -426,7 +426,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-[1.9rem] font-semibold text-gray-800"
+                  className="text-center text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-800"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -529,7 +529,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-[1.9rem] font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-900"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -613,7 +613,7 @@ const TripPlanner = ({ id }) => {
 
               <div className=" w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-[1.9rem] font-semibold text-gray-900"
+                  className="text-center text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-900"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -700,7 +700,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex justify-center items-center">
                 <h2
-                  className="text-center text-[1.9rem] font-semibold text-gray-800"
+                  className="text-center text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-800"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -725,7 +725,7 @@ const TripPlanner = ({ id }) => {
               <div className="block w-1/4 max-sm:w-full mt-3 border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-1/2 text-center">
                 <h2
-                  className="text-[1.9rem] font-semibold text-gray-800 "
+                  className="text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-800 "
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
@@ -775,7 +775,7 @@ const TripPlanner = ({ id }) => {
               <div className="flex w-3/12 max-sm:w-full mt-3 justify-center items-center border-4 border-orange-500 h-0"></div>
               <div className="w-full md:w-6/12 flex flex-col items-center">
                 <h2
-                  className="text-[1.9rem] font-bold text-gray-800 text-center text-shadow-md capitalize mt-[-1px]"
+                  className="text-[1.9rem] font-semibold capitalize overflow-hidden text-ellipsis whitespace-nowrap  text-gray-800 text-center text-shadow-md capitalize mt-[-1px]"
                   style={{
                     overflow: "hidden",
                     textOverflow: "ellipsis",
