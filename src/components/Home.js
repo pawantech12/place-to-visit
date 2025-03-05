@@ -538,7 +538,7 @@ const Home = () => {
               </div>
 
               <p
-                className="text-[21px] text-zinc-700 leading-[38px] tracking-wide mt-4 text-justify"
+                className="text-[21px] text-zinc-700 leading-[38px] flex flex-col gap-4 tracking-wide mt-4 text-justify"
                 style={{ textShadow: "1.1px 0px 0px #c1c1c1" }}
               >
                 {Data?.upper_desc}
@@ -678,7 +678,7 @@ const Home = () => {
               {/* Description Section */}
               <div
                 dangerouslySetInnerHTML={{ __html: Data?.about_ptvi_desc }}
-                className="text-[21px] text-zinc-700 text-justify leading-8 mt-5"
+                className="text-[21px] text-zinc-700 text-justify flex flex-col gap-4 leading-8 mt-5"
               />
             </div>
           </div>
